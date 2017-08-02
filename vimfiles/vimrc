@@ -96,6 +96,8 @@ nnoremap gr gT
 
 " ESCAPING "
 inoremap jj <Esc>`^
+inoremap JJ <Esc>`^
+vnoremap ,, <Esc>`^
 
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
