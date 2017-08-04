@@ -1,5 +1,12 @@
 init:
 	@make vim
+	@make git
+
+git:
+	@ln -sf `pwd`/gitfiles/gitconfig ~/.gitconfig
+	@echo "Installed .gitconfig"
+	@ln -sf `pwd`/gitfiles/gitignore ~/.gitignore
+	@echo "Installed .gitignore"
 
 vim:
 	@curl -fLo ~/.vim/autoload/plug.vim --create-dirs \

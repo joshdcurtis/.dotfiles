@@ -1,0 +1,29 @@
+[user]
+	name = Josh Curtis
+	email = jdcurtis@amazon.com
+[core]
+	excludesfile = /Users/jdcurtis/.gitignore
+	pager = less -FMRiX
+	editor = /usr/local/bin/vim
+[color]
+	ui = auto
+[push]
+	default = simple
+[alias]
+	co = checkout
+  s = status
+	st = status
+  stats = status
+	br = branch
+	ci = commit
+	amend = commit --amend
+  d = difftool
+  short = shortlog -s -n
+  pr = pull --rebase
+  gg = rebase --abort
+	dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+  l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  p = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -p
+  assume   = update-index --assume-unchanged
+  unassume = update-index --no-assume-unchanged
+  assumed  = "!git ls-files -v | grep ^h | cut -c 3-"
